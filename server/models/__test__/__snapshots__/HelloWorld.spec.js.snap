@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelloWorldQuery Query 'hello-world' Correctly! 1`] = `[TypeError: HelloWorld is not a constructor]`;

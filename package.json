@@ -7,5 +7,16 @@
     "express": "^4.16.2",
     "mongoose": "^4.12.1",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "jest": "jest",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1"
   }
 }

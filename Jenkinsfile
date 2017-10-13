@@ -12,12 +12,12 @@ pipeline {
       steps {
         slackSend channel: '#devops', color: '#439FE0', message: '[sit-craft-helloworld-api] เริ่มต้นการ Build #$BUILD_NUMBER', teamDomain: 'alchemist-itbangmod'
         sh 'npm install'
-        sh 'npm run build'
+        // sh 'npm run build'
       }
     }
     stage('unit-test') {
       steps {
-        sh 'npm run test'
+        // sh 'npm run test'
       }
     }
     stage('zipfile') {

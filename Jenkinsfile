@@ -19,7 +19,7 @@ pipeline {
     stage('unit-test') {
       steps {
         // sh 'yarn run test'
-        sh 'will run unit test'
+        sh 'echo will run unit test'
       }
     }
     stage('zipfile') {

@@ -56,10 +56,10 @@ pipeline {
   }
   post {
     always {
-      slackSend channel: '#devops', color: 'good', message: "[${JOB_NAME}] Build ที่ #${BUILD_NUMBER} Pipeline เสร็จสิ้นแล้ว", teamDomain: 'alchemist-itbangmod'
+      echo 'Success XD'
     }
     success {
-      echo 'Success XD'
+      slackSend channel: '#devops', color: 'good', message: "[${JOB_NAME}] Build ที่ #${BUILD_NUMBER} Pipeline เสร็จสิ้นแล้ว", teamDomain: 'alchemist-itbangmod'
     }
     failure {
       slackSend channel: '#devops', color: 'danger', message: "[${JOB_NAME}] แย่แล้ว มีบางอย่างผิดปกติ (Build ที่ #${BUILD_NUMBER})", teamDomain: 'alchemist-itbangmod'

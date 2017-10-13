@@ -8,7 +8,6 @@ pipeline {
     ARCHIVE_ARTIFACT_PATH = "/jenkins-artifact/sit-craft-helloworld-api"
   }
   agent any
-  agent any
   stages {
     stage('build') {
       steps {
